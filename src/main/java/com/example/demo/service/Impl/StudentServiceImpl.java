@@ -1,5 +1,5 @@
 package com.example.demo.service.Impl;
-import org.springframework.bens.factory.annotation.AutoWired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
