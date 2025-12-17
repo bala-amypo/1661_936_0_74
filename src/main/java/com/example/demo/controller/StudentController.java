@@ -1,4 +1,4 @@
-0package.com.example.demo.controller;
+0pa0ckage.com.example.demo.controller;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
