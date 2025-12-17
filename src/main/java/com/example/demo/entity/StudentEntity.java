@@ -6,7 +6,7 @@ private Integer id;
 private String username;
 private String email;
 private String password;
-private Data createAt;
+private Date createAt;
 
 public void setId(){
     this.id=id;
@@ -39,5 +39,13 @@ public Date getCreateAt(){
 public void setCreateAt(Date createAt){
     this.createAt=createAt;
 }
-public StudentEntity(integerString name,String)
+public StudentEntity(Integer id,String username,String email,String password,Date createAt ){
+    this.id=id;
+    this.username=username;
+    this.email=email;
+    this.password=password;
+    this.createAt=createAt;
+
+}
+
 }
