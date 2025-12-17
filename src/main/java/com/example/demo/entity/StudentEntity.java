@@ -3,13 +3,12 @@ package pom.example.demo.entity
 import jarkarta.persistence.Entity;
 import jarkarta.persistence.Id;
 import jarkarta.persistence.GeneratedValue;
+import jarkarta.persistence.GenerationType;
 
 @Entity
 public class StudentEntity(){
 @Id
-@GeneratedValue{
-    Stratedy=
-}
+@GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
 private String username;
 private String email;
