@@ -1,10 +1,10 @@
 
 package pom.example.demo.entity;
 import java.util.Date;
-import jarkarta.persistence.Entity;
-import jarkarta.persistence.Id;
-import jarkarta.persistence.GeneratedValue;
-import jarkarta.persistence.GenerationType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 public class StudentEntity{
