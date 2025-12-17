@@ -1,1 +1,11 @@
-package com.example.demo.service
+package com.example.demo.service;
+
+
+
+
+
+
+
+public interface StudentService {
+
+}
