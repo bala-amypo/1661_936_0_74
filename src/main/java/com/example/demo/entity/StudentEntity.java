@@ -8,7 +8,7 @@ private String email;
 private String password;
 private Date createAt;
 
-public void setId(){
+public void setId(Integer id){
     this.id=id;
 }
 public Integer getId(){
@@ -45,6 +45,9 @@ public StudentEntity(Integer id,String username,String email,String password,Dat
     this.email=email;
     this.password=password;
     this.createAt=createAt;
+
+}
+public StudentEntity(){
 
 }
 
