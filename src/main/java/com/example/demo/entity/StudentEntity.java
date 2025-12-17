@@ -1,7 +1,15 @@
 
 package pom.example.demo.entity
+import jarkarta.persistence.Entity;
+import jarkarta.persistence.Id;
+import jarkarta.persistence.GeneratedValue;
+
 @Entity
 public class StudentEntity(){
+@Id
+@GeneratedValue{
+    Stratedy=
+}
 private Integer id;
 private String username;
 private String email;
