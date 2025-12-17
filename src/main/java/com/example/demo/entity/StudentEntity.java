@@ -26,8 +26,18 @@ public String getEmail(String Email){
 public void setEmail(String email){
     this.email=email;
 }
-public vvoid setPassword(){
-    
-}
 
+public String getPassword(){
+    return password;
+}
+public void setPassword(String password){
+    this.password=password;
+}
+public Date getCreateAt(){
+    return createAt;
+}
+public void setCreateAt(Date createAt){
+    this.createAt=createAt;
+}
+public StudentEntity(integerString name,String)
 }
