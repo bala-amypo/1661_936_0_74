@@ -1,7 +1,7 @@
 package com.example.demo.service.Impl;
-import com.example.demo.entity.StudentEntity;
-import com.example.demo.repository.StudentRepository;
-import com.example.demo.service.StudentService;
+import com.example.demo.entity.ValidationEntity;
+import com.example.demo.repository.ValidationRepository;
+import com.example.demo.service.ValidationService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,32 +9,32 @@ import org.springframework.stereotype.Service;
 @Service
 public class ValidationServiceImpl implements ValidationService {
 
-    @Autowired ValidationRepository student;
+    @Autowired ValidationRepository validation;
     
  
 
     @Override
-    public StudentEntity postData(StudentEntity stu) {
-        return student.save(stu);
+    public ValidationEntity postData(ValidationEntity stu) {
+        return validation.save(stu);
     }
     @Override 
-      public List<StudentEntity>getAllData(){
-          return student.findAll();
+      public List<ValidationEntity>getAllData(){
+          return validation.findAll();
       }
       @Override
-      public String DeleteData(Integer id){
-        student.deleteById(id);
+      public String DeleteData(Long id){
+        validation.deleteById(id);
         return "Deleted Successfully!";
       }
       @Override
-       public StudentEntity getData(Integer id){
-         return student.findById(id).orElse(null);
+       public ValidationEntity getData(Long id){
+         return validation.findById(id).orElse(null);
       }                 
       @Override
-      public StudentEntity updateData(int id,StudentEntity entity){
-     if(student.existsById(id)){
+      public ValidationEntity updateData(int id,ValidationEntity entity){
+     if(validation.existsById(id)){
         entity.setId(id);
-        return student.save(entity);
+        return validation.save(entity);
      }
      return null;
      
