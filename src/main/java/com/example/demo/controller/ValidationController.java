@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.PutMapping;
 // @RestController
 public class ValidationController{
-@Autowired ValidationService ser;
+@Autowired ValidationService Ser;
   
     @PostMapping("/post")
-    public ValidationEntity sendData(@RequestBody ValidationEntity ent){
-        return ser.postData(ent);
+    public ValidationEntity sendData(@RequestBody ValidationEntity Ent){
+        return Ser.postData(Ent);
     }
 //     @GetMapping("/get")
 //     public List<StudentEntity> getValue(){
