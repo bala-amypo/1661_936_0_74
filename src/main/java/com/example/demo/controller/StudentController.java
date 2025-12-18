@@ -29,4 +29,6 @@ public class StudentController{
     public StudentEntity getdataid(@PathVariable Integer id){
         return service.getData(id);
     }
+    @PutMapping("/put/{id}")
+    public StudentEntity putValue(@PathVariable int id,@Requesr)
 }
