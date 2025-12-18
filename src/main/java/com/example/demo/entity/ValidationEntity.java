@@ -28,11 +28,10 @@ public class ValidationEntity {
     @Max(30)
     private int age;
 
-    // ✅ REQUIRED by JPA
     public ValidationEntity() {
     }
 
-    // ✅ Constructor
+    
     public ValidationEntity(Long id, String username, String email, String password, int age) {
         this.id = id;
         this.username = username;
@@ -41,7 +40,6 @@ public class ValidationEntity {
         this.age = age;
     }
 
-    // ✅ Getters & Setters
     public Long getId() {
         return id;
     }
