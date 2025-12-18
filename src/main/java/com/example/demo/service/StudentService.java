@@ -6,6 +6,6 @@ public interface StudentService {
 StudentEntity postData(StudentEntity stu);
   List<StudentEntity>getAllData();
    String DeleteData(Integer id);           
-// StudentEntity getData(Integer id);
+StudentEntity getData(Integer id);
 
 }

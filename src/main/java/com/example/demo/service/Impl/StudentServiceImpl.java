@@ -22,12 +22,12 @@ public class StudentServiceImpl implements StudentService {
           return student.findAll();
       }
       @Override
-      public String DeleteData(Integer id){
+      public String DeleteData(int id){
         student.deleteById(id);
         return "Deleted Successfully!";
       }
-    //   @Override
-    //   public StudentEntity getData(Integer id){
-    //     return student.findById(id);
-    //   }
+      @Override
+       public StudentEntity getData(Integer id){
+         return student.findById(id);
+      }
 }
