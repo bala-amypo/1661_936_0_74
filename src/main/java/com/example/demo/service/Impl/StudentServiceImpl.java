@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-    @Autowired
-    private StudentRepository student;
+    @Autowired StudentRepository student;
+    
+ 
 
     @Override
     public StudentEntity postData(StudentEntity stu) {
