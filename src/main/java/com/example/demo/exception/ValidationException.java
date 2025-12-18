@@ -5,6 +5,11 @@ public class ValidationException extends RuntimeException{
 
 
 public ValidationException(String message){
-super
+super(message);
+@Override
+       public ValidationEntity getData(Integer id){
+         return validation.findById(id);
+      
+      } 
 }
-}
+} 
