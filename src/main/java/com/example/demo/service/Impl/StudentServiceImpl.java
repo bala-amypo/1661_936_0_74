@@ -29,7 +29,7 @@ public class StudentServiceImpl implements StudentService {
       @Override
        public StudentEntity getData(Integer id){
          return student.findById(id).orElse(null);
-      }
+      }n                    
       @Override
       public StudentEntity updateData(int id,StudentEntity entity){
      if(student.existsById(id)){
