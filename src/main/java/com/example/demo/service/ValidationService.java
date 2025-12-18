@@ -3,11 +3,11 @@ import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 public interface ValidationService {
   
-StudentEntity postData(ValidationEntity stu);
-  List<StudentEntity>getAllData();
-   String DeleteData(Integer id);           
-StudentEntity getData(Integer id);
-StudentEntity updateData(int id,StudentEntity entity);
+ValidationEntity postData(ValidationEntity val);
+  List<ValidationEntity>getAllData();
+   String DeleteData(Long id);           
+ValidationEntity getData(Long id);
+ValidationEntity updateData(int id,ValidationEntity entity);
 
 
 }
