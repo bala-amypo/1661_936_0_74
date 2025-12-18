@@ -13,11 +13,11 @@ public class ValidationServiceImpl implements ValidationService {
     
  
 
-    @Override
-    public ValidationEntity postData(ValidationEntity val) {
-        return validation.save(val);
+    // @Override
+    // public ValidationEntity postData(ValidationEntity val) {
+    //     return validation.save(val);
     }
-    
+
     // @Override 
     //   public List<ValidationEntity>getAllData(){
     //       return validation.findAll();
