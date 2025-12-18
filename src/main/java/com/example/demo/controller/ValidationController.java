@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.DeleteMapping;
 // import org.springframework.web.bind.annotation.RequestBody;
 // import org.springframework.web.bind.annotation.PutMapping;
-// @RestController
+import jakarta.validation.Valid;
+ @RestController
 public class ValidationController{
 @Autowired ValidationService Ser;
   
