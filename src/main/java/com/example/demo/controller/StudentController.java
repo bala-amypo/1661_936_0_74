@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+importn org
 @RestController
 public class StudentController{
 @Autowired StudentService ser;
@@ -27,10 +28,10 @@ public class StudentController{
     }
     @GetMapping("/getid/{id}")
     public StudentEntity getdataid(@PathVariable Integer id){
-        return service.getData(id);
+        return ser.getData(id);
     }
     @PutMapping("/put/{id}")
     public StudentEntity putValue(@PathVariable int id,@RequestBody StudentEntity entity){
-   return service.updateData(id,entity);
+   return ser.updateData(id,entity);
 }
 }
