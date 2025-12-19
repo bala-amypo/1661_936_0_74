@@ -15,7 +15,7 @@ import jakarta.persistence.GenerationType;
 public class StudentTableEntity{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-private Integer id;
+private Integer student_id;
 private String name;
 private String email;
 private String address;

@@ -20,7 +20,7 @@ public class IdentityEntity{
 private Integer id;
 private String IdCard;
 @OneToOne
-@JoinColumn(name="C")
+@JoinColumn(name="student_id")
 private IdentityEntity idcard;
 
 }
