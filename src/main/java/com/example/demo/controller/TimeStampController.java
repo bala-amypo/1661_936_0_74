@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import com.example.demo.service.StudentService;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.service.TimeStampService;
+import com.example.demo.entity.TimeStampEntity;
 import java.util.List;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 @RestController
-public class StudentController{
-@Autowired StudentService ser;
+public class TimeStampController{
+@Autowired TimeStampService ser;
   
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity ent){
+    public TimeStampEntity sendData(@RequestBody TimeStampEntity ent){
         return ser.postData(ent);
     }
     }
