@@ -1,9 +1,9 @@
 package com.example.demo.service;
 import com.example.demo.entity.IdentityEntity;
 import java.util.List;
-public interface StudentTableService {
+public interface IdentityService {
   
-StudentTaeEntity postData(IdentityEntity itable);
+IdentityEntity postData(IdentityEntity itable);
 
 
 
