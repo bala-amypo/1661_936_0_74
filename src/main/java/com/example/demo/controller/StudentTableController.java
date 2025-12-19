@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class StudentTableController{
 @Autowired StudentTableService stable;
   
-    @PostMapping("/postforTimeStamp")
+    @PostMapping("/postforStudentTable")
     public StudentTableEntity sendData(@RequestBody StudentTableEntity Ent){
         return stable.postData(Tab);
     }
