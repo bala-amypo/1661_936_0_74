@@ -7,7 +7,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import 
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -18,7 +20,7 @@ public class IdentityEntity{
 private Integer id;
 private String IdCard;
 @OneToOne
-
+@JoinColumn(name="C")
 private IdentityEntity idcard;
 
 }
