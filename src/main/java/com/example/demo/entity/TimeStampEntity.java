@@ -21,4 +21,6 @@ private String username;
 private String email;
 private LocalDateTime createAt;
 private LocalDateTime updateAt;
+@PrePersist                         
+public 
 }
