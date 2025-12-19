@@ -17,3 +17,4 @@ public class TimeStampServiceImpl implements ValidationService {
         return timestamp.save(time);
     }
         
+}
