@@ -15,7 +15,7 @@ public class StudentTableController{
 @Autowired StudentTableService stable;
   
     @PostMapping("/postforStudentTable")
-    public StudentTableEntity sendData(@RequestBody StudentTableEntity Ent){
+    public StudentTableEntity sendData(@RequestBody StudentTableEntity Enti){
         return stable.postData(Tab);
     }
     }
