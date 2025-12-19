@@ -21,8 +21,8 @@ public class ValidationController {
         return service.postData(entity);
     }
 
-     @GetMapping("/getid/{id}")
+     @GetMapping("/getvalid/{id}")
     public ValidationEntity getdataid(@PathVariable Integer id){
-        return ser.getData(id);
+        return service.getData(id);
     }
 }
