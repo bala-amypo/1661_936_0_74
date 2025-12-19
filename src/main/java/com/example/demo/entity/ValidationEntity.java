@@ -1,12 +1,12 @@
 package com.example.demo.entity;
-import.lombok.Data;
+import lombok.Data;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.*;
-import.lombok.AllArgsConstructor;
-import.lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data

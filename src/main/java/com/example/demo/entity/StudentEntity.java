@@ -1,9 +1,9 @@
 
 package com.example.demo.entity;
 import java.util.Date;
-import.lombok.AllArgsConstructor;
-import.lombok.NoArgsConstructor;
-import.lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
