@@ -1,5 +1,6 @@
-import jakarta.persistence.PreUpdate;
+
 package com.example.demo.entity;
+import jakarta.persistence.PreUpdate;
 import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -22,8 +23,9 @@ private String username;
 private String email;
 private LocalDateTime createAt;
 private LocalDateTime updateAt;
-    LocalDateTime now=LocalDateTime().now();
-@PrePersist                         
+
+@PrePersist   
+    LocalDateTime now=LocalDateTime.now();                      
 public void Oncreate(){
 
     this.createAt=now;
