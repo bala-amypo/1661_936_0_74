@@ -18,6 +18,8 @@ public class IdentityEntity{
 private Integer id;
 private String IdCard;
 
+private 
+
 }
 
 
