@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ValidationServiceImpl implements ValidationService {
+public class TimeStampServiceImpl implements ValidationService {
 
-    @Autowired ValidationRepository validation;
+    @Autowired TimeStampRepository timestamp;
 
     @Override
-    public ValidationEntity postData(ValidationEntity val) {
-        return validation.save(val);
+    public TimeStampEntity postData(TimeStampEntity val) {
+        return timestamp.save(val);
     }
