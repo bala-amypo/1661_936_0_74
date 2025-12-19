@@ -1,4 +1,4 @@
-
+import jakarta.persistence.PreUpdate;
 package com.example.demo.entity;
 import java.util.Date;
 import lombok.AllArgsConstructor;
@@ -24,9 +24,10 @@ private LocalDateTime createAt;
 private LocalDateTime updateAt;
 @PrePersist                         
 public void Oncreate(){
-    LocalDateTime now=newLocalDateTime();
+    LocalDateTime now=LocalDateTime().now();
     this.createAt=now;
     this.updateAt=now;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }
-}
+ @PreUpdate   
+ public void Onupdate()
