@@ -7,7 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-
+import 
 @Entity
 @Data
 @AllArgsConstructor
@@ -17,8 +17,9 @@ public class IdentityEntity{
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
 private String IdCard;
+@OneToOne
 
-private 
+private IdentityEntity idcard;
 
 }
 
