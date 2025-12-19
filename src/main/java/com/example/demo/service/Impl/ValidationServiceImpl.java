@@ -18,17 +18,17 @@ public class ValidationServiceImpl implements ValidationService {
         return validation.save(val);
     }
 
-    // @Override
-    // public ValidationEntity updateData(int id, ValidationEntity entity) {
-    //     if (validation.existsById((long) id)) {
-    //         entity.setId((long) id);
-    //         return validation.save(entity);
-    //     }
-
-    //     return null;
-    // }
     @Override
-       public ValidationEntity getData(long id){
-         return validation.findById(id);
+    public ValidationEntity updateData(int id, ValidationEntity entity) {
+        if (validation.existsById((long) id)) {
+            entity.setId((long) id);
+            return validation.save(entity);
+        }
+
+        return null;
+    }
+    @Override
+       public ValidationEntity getData(int id){
+         return validati.findById(id);
       } 
 }
