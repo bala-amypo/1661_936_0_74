@@ -15,7 +15,7 @@ public class TimeStampController{
 @Autowired TimeStampService stamp;
   
     @PostMapping("/postforTimeStamp")
-    public TimeStampEntity sendData(@RequestBody TimeStampEntity ent){
-        return stamp.postData(ent);
+    public TimeStampEntity sendData(@RequestBody TimeStampEntity Ent){
+        return stamp.postData(Ent);
     }
     }
