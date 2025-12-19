@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service;
 public class TimeStampImpl implements StudentTableService {
 
     @Autowired
-    private StudentTableRepository timestamp;
+    private StudentTableRepository studenttable;
 
     @Override
     public StudentTableEntity postData(StudentTableEntity time) {
-        return timestamp.save(time);
+        return studenttable.save(time);
     }
 }
