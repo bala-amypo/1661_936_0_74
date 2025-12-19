@@ -8,7 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-
+import java.time.LocalDateTime;
 @Entity
 @Data
 @AllArgsConstructor
@@ -19,6 +19,6 @@ public class TimeStampEntity{
 private Long id;
 private String username;
 private String email;
- Date createAt;
-
+private LocalDateTime createAt;
+private LocalDateTime updateAt;
 }
