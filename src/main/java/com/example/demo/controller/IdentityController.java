@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import com.example.demo.service.StudentTableService;
-import com.example.demo.entity.StudentTableEntity;
+import com.example.demo.service.IdentityService;
+import com.example.demo.entity.IdentityEntity;
 import java.util.List;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class IdentityController{
 @Autowired IdentityService itable;
   
     @PostMapping("/postforIdentityTable")
-    public IdentityEntity sendData(@RequestBody StudentTableEntity Entit){
+    public IdentityEntity sendData(@RequestBody IdentityEntity Entit){
         return itable.postData(Entit);
     }
     }
