@@ -1,5 +1,5 @@
 package com.example.demo.entity;
-
+import.lombok.
 import jakarta.persistence.Entity;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.*;
 
 @Entity
+@Data
 public class ValidationEntity {
 
     @Id
@@ -28,5 +29,5 @@ public class ValidationEntity {
     @Max(30)
     private int age;
 
-    
+   
 }
