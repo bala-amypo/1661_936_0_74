@@ -16,7 +16,7 @@ public class IdentityEntity{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
-private String IdCardedNO;
+private String IdCard;
 
 }
 
