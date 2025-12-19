@@ -8,8 +8,8 @@ public ValidationException(String message){
 super(message);
 @Override
        public ValidationEntity getData(Integer id){
-         return validation.findById(id);
-      
-      } 
-}
-} 
+                return validation.findById(id);
+                      
+                            } 
+                            }
+                            } 
