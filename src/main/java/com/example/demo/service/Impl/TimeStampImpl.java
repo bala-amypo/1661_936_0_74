@@ -16,3 +16,4 @@ public class TimeStampServiceImpl implements ValidationService {
     public TimeStampEntity postData(TimeStampEntity time) {
         return timestamp.save(time);
     }
+        
