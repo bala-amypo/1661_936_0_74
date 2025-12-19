@@ -15,7 +15,7 @@ public class StudentTableImpl implements StudentTableService {
     private StudentTableRepository studenttable;
 
     @Override
-    public StudentTableEntity postData(StudentTableEntity stable) {
-        return studenttable.save(time);
+    public StudentTableEntity postData(StudentTableEntity table) {
+        return studenttable.save(table);
     }
 }
