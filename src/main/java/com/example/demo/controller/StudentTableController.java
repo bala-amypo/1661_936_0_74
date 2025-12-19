@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import com.example.demo.service.TimeStampService;
-import com.example.demo.entity.TimeStampEntity;
+import com.example.demo.service.StudentTableService;
+import com.example.demo.entity.StudentTableEntity;
 import java.util.List;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 public class StudentTableController{
-@Autowired StudentTableService stamp;
+@Autowired StudentTableService stable;
   
     @PostMapping("/postforTimeStamp")
     public StudentTableEntity sendData(@RequestBody StudentTableEntity Ent){
-        return stamp.postData(Ent);
+        return stable.postData(Tab);
     }
     }
