@@ -13,6 +13,6 @@ public class TimeStampServiceImpl implements ValidationService {
     @Autowired TimeStampRepository timestamp;
 
     @Override
-    public TimeStampEntity postData(TimeStampEntity val) {
-        return timestamp.save(val);
+    public TimeStampEntity postData(TimeStampEntity time) {
+        return timestamp.save(time);
     }
