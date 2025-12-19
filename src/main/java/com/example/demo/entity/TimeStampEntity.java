@@ -22,12 +22,17 @@ private String username;
 private String email;
 private LocalDateTime createAt;
 private LocalDateTime updateAt;
+    LocalDateTime now=LocalDateTime().now();
 @PrePersist                         
 public void Oncreate(){
-    LocalDateTime now=LocalDateTime().now();
+
     this.createAt=now;
     this.updateAt=now;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 }
  @PreUpdate   
- public void Onupdate()
+ public void Onupdate(){
+ this.updateAt=now;
+ 
+}
+}
