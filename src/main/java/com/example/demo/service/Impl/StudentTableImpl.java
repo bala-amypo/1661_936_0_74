@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TimeStampImpl implements StudentTableService {
+public class StudentTableImpl implements StudentTableService {
 
     @Autowired
     private StudentTableRepository studenttable;
 
     @Override
-    public StudentTableEntity postData(StudentTableEntity time) {
+    public StudentTableEntity postData(StudentTableEntity stable) {
         return studenttable.save(time);
     }
 }
