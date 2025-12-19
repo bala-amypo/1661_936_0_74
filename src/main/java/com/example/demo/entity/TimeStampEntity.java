@@ -26,9 +26,10 @@ private LocalDateTime updateAt;
 
 @PrePersist                        
 public void Oncreate(){
-    LocalDateTime now=LocalDateTime.now();                      
-
+    LocalDateTime now=LocalDateTime.now();     
+    if(this.createAt==null){
     this.createAt=now;
+    }
     this.updateAt=now;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 }
