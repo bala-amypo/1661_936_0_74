@@ -16,6 +16,6 @@ public class StudentTableController{
   
     @PostMapping("/postforStudentTable")
     public StudentTableEntity sendData(@RequestBody StudentTableEntity Enti){
-        return stable.postData(Tab);
+        return stable.postData(Enti);
     }
     }
